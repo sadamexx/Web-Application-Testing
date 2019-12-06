@@ -1,24 +1,22 @@
 import React from 'react';
+import 
+
 
 export const Dashboard = () => {
 
     return (
         <div className="dashboard">
-            <div className="balls">
-                <h3>Balls</h3>
-                <div className="balls_value">{balls}</div>
+            <div className="addBall">
+                <button onClick={() => setBallScore(addFoul(foulScore))}>Balls</button>                
             </div>
-            <div className="strikes">
-                <h3>Strikes</h3>
-                <div className="strikes_value">{strikes}</div>
+            <div className="addStrike">
+                <button>Strike</button>                
             </div>    
-            <div className="fouls">
-                <h3>Fouls</h3>
-                <div className="fouls_value">{fouls}</div>
+            <div className="addFoul">
+                <button>Foul</button>                
             </div>    
-            <div className="hits">
-                <h3>Hits</h3>
-                <div className="hits_value">{hits}</div>
+            <div className="addHit">
+                <button>Hits</button>                
             </div>            
         </div>//ends dashboard
     );

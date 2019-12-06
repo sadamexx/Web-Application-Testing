@@ -1,10 +1,13 @@
 
 
-const addFoul = (currentFoul, currentStrike) => {
-    if(currentStrike === 0){
-    return currentFoul + 1} else if (currentStrike === 1){
-        return (currentStrike+1) (currentFoul+1)} else if (currentStrike >= 2){
-            return (currentFoul+1)
+const addFoul = (foulScore, strikeScore) => {
+    if(strikeScore === 0){
+    return (foulScore + 1);} else if(strikeScore === 1){
+        return (strikeScore + 1), (foulScore + 1);} 
+        else{
+            return (foulScore + 1);
         }
     }
-}
+
+
+export default addFoul;

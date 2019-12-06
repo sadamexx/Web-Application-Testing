@@ -1,26 +1,21 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
+import {Display} from './components/Display';
+import {Dashboard} from './components/Dashboard';
 import './App.css';
 
 function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+       <h1>Player Stat Board</h1>
+       <img width = "200" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS556ck-T-pfO9OiY2gk1cJ06hcILYbljuBuCsRe0kdVafxaWfv&s" alt="baseball player" />
+      
+      <Display />
+      <Dashboard />
+      
+
+    </div>///ends App class
   );
 }
 
