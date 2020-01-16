@@ -1,23 +1,29 @@
 import React from 'react';
-import 
 
 
-export const Dashboard = () => {
-
+export const Dashboard = (props) => {
+    
     return (
-        <div className="dashboard">
+        <div style={{border: "black"}}>
             <div className="addBall">
-                <button onClick={() => setBallScore(addFoul(foulScore))}>Balls</button>                
+                <button onClick={props.addBall}>Ball</button>                
             </div>
+
             <div className="addStrike">
-                <button>Strike</button>                
-            </div>    
+                <button onClick= {props.addStrike}>Strike</button>                
+            </div>  
+
             <div className="addFoul">
-                <button>Foul</button>                
-            </div>    
+                <button onClick={props.addFoul}>Foul</button>                
+            </div> 
+
             <div className="addHit">
-                <button>Hits</button>                
-            </div>            
+                <button onClick={props.addHit}>Hit</button>                
+            </div>  
+            
+            <div>
+                <button onClick={props.reset}>Clear Board</button>
+            </div>          
         </div>//ends dashboard
     );
 }
